@@ -1,4 +1,4 @@
-<div style="padding: 13px;">
+<div *ngIf="ProductList" style="padding: 13px;">
     <mat-card *ngFor="let product of ProductList" style="margin-top:12px;">
         <mat-card-header>
             <mat-card-title>{{product.name}}</mat-card-title>
@@ -15,4 +15,7 @@
       <button mat-button> Buy product</button>
     </mat-card-actions>
     </mat-card>
+</div>
+<div>
+    <p>testing</p>
 </div>
